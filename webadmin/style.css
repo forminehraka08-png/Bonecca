@@ -1,11 +1,28 @@
-/* webadmin/style.css */
-
+.gradient-violet {
+    background: linear-gradient(135deg, #7f53ac, #647dee);
+    color: white;
+}
+.gradient-green {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    color: black;
+}
+.gradient-black {
+    background: linear-gradient(135deg, #232526, #414345);
+    color: white;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 30px;
 }
-
-h1 {
-    color: #4CAF50;
-} 
+input, button, textarea, select {
+    margin: 5px;
+    font-size: 1em;
+}
+table, th, td {
+    border: 1px solid #666;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.tab { display: none; }
+#tabs button { margin: 2px; padding: 5px 15px; background: #43e97b; border: none; border-radius: 7px; color: #222; cursor: pointer;}
+#tabs button.active { background: #7f53ac; color: white;}

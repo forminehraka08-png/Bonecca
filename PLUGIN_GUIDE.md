@@ -1,3 +1,30 @@
-# PLUGIN_GUIDE.md
+# Инструкция по созданию плагинов
 
-# Guide for creating plugins.
+1. Создайте файл в папке `plugins`, например `myplugin.py`.
+2. Импортируйте необходимые API:
+   ```python
+   # storage - асинхронный API для работы с базой
+   # PluginManager автоматически загрузит ваш плагин
+   ```
+3. Реализуйте класс `Plugin` с методом `async def on_message(self, message, storage):`
+4. Добавьте строку `help_text = "Описание вашего плагина"` для отображения в /help.
+5. Пример:
+   ```python
+   class Plugin:
+       help_text = "Мой крутой плагин!"
+
+       def __init__(self, storage):
+           self.storage = storage
+
+       async def on_message(self, message, storage):
+           if message.text and "hello" in message.text.lower():
+               await message.reply("Плагин говорит привет!")
+   ```
+6. Плагины **НЕ зависят** от main.py и других плагинов.
+7. Ошибка в плагине — он отключается, бот работает дальше.
+8. Для работы с базой используйте методы storage.
+9. Для загрузки ресурсов (картинки и т.д.) положите их рядом с вашим файлом.
+10. Плагин кэшируется при загрузке для ускорения.
+
+**Запуск бота:**  
+- Положите новый файл плагина в `plugins`, бот подгрузит его автоматически при рестарте.

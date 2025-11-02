@@ -1,3 +1,5 @@
-# requirements.txt
-
-# List your project dependencies here.
+aiogram>=3.0.0b7
+aiosqlite
+fastapi
+uvicorn
+jinja2
