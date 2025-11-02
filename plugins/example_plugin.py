@@ -1,1 +1,3 @@
-# example_plugin.py content
+# plugins/example_plugin.py
+
+# Example plugin code here.

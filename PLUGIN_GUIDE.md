@@ -1,1 +1,3 @@
-# PLUGIN_GUIDE.md content
+# PLUGIN_GUIDE.md
+
+# Guide for creating plugins.

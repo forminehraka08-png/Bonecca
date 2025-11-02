@@ -1,1 +1,3 @@
-# main.py content
+# main.py
+
+# Your main bot code here.

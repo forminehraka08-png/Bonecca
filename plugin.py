@@ -1,1 +1,3 @@
-# plugin.py content
+# plugin.py
+
+# Your plugin system code here.

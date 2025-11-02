@@ -1,1 +1,3 @@
-// main.js content
+// webadmin/main.js
+
+console.log('Web Admin Loaded');
