@@ -1,2 +1,1 @@
-# Bonecca
-Nxnxjx
+# README.md content
